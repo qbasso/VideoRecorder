@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qbasso="http://schemas.android.com/apk/res/qbasso" >
+
+    <PreferenceCategory android:title="Settings" >
+        <pl.qbasso.videorecorder.SliderPreference
+            android:defaultValue="20"
+            android:dialogMessage="Frames"
+            android:dialogTitle="Frames"
+            android:key="frames"
+            android:persistent="true"
+            android:title="Frames"
+            qbasso:max="30"
+            qbasso:min="5" >
+        </pl.qbasso.videorecorder.SliderPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
