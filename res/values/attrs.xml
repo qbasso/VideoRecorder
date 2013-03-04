@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-   <declare-styleable name="pl.qbasso.videorecorder.SliderPreference">
+   <declare-styleable name="SliderPreference">
        <attr name="min" format="integer"></attr>
        <attr name="max" format="integer"></attr>
    </declare-styleable>

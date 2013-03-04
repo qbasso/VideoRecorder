@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:qbasso="http://schemas.android.com/apk/res/qbasso" >
+    xmlns:qbasso="http://schemas.android.com/apk/res/pl.qbasso.videorecorder" >
 
     <PreferenceCategory android:title="Settings" >
         <pl.qbasso.videorecorder.SliderPreference
@@ -9,9 +9,9 @@
             android:dialogTitle="Frames"
             android:key="frames"
             android:persistent="true"
-            android:title="Frames"
+            qbasso:min="10"
             qbasso:max="30"
-            qbasso:min="5" >
+            android:title="Frames" >
         </pl.qbasso.videorecorder.SliderPreference>
     </PreferenceCategory>
 

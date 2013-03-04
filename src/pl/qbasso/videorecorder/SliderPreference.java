@@ -29,9 +29,9 @@ public class SliderPreference extends DialogPreference {
 	private void init(Context context, AttributeSet attrs) {
 		setDialogLayoutResource(R.layout.slider_dialog);
 		TypedArray ar = context.obtainStyledAttributes(attrs,
-				R.styleable.pl_qbasso_videorecorder_SliderPreference);
-		mMinValue = ar.getInt(R.styleable.pl_qbasso_videorecorder_SliderPreference_min, 0);
-		mMaxValue = ar.getInt(R.styleable.pl_qbasso_videorecorder_SliderPreference_max, 0);
+				R.styleable.SliderPreference);
+		mMinValue = ar.getInt(R.styleable.SliderPreference_min, 0);
+		mMaxValue = ar.getInt(R.styleable.SliderPreference_max	, 0);
 	}
 
 	@Override

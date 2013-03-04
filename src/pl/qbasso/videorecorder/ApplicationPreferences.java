@@ -1,28 +1,21 @@
 package pl.qbasso.videorecorder;
 
 import android.content.SharedPreferences;
-import android.graphics.Color;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.os.Bundle;
-import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.ForegroundColorSpan;
 
-public class ApplicationPreferences extends PreferenceActivity {
-//	protected void onCreate(Bundle savedInstanceState) {
-//		// TODO Auto-generated method stub
-//		super.onCreate(savedInstanceState);
-//		SharedPreferences preference = PreferenceManager
-//				.getDefaultSharedPreferences(this);
-//		addPreferencesFromResource(R.xml.preferences);
-//		PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
-//		preference.registerOnSharedPreferenceChangeListener(this);
-//		setServerSummary(preference);
-//		setEmailSummary(preference);
-//	}
+public class ApplicationPreferences extends PreferenceActivity implements OnSharedPreferenceChangeListener {
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		SharedPreferences preference = PreferenceManager
+				.getDefaultSharedPreferences(this);
+		addPreferencesFromResource(R.xml.preferences);
+		PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+		preference.registerOnSharedPreferenceChangeListener(this);
+	}
 //
 //	private void setEmailSummary(SharedPreferences preference) {
 //		Spannable summary = new SpannableString(preference.getString(
@@ -66,5 +59,11 @@ public class ApplicationPreferences extends PreferenceActivity {
 //		PreferenceManager.getDefaultSharedPreferences(this)
 //				.unregisterOnSharedPreferenceChangeListener(this);
 //	}
+
+	@Override
+	public void onSharedPreferenceChanged(SharedPreferences arg0, String arg1) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

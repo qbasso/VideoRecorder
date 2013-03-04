@@ -1,6 +1,7 @@
 package pl.qbasso.videorecorder;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaRecorder;
 import android.media.MediaRecorder.OnInfoListener;
 import android.os.Bundle;
@@ -56,7 +57,8 @@ public class VideoRecorder extends Activity implements SurfaceHolder.Callback {
 				SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 		mSurfaceView.getHolder().addCallback(this);
 		mSurfaceView.setLayoutParams(new FrameLayout.LayoutParams(1, 1));
-		l.addView(mSurfaceView);
+		//l.addView(mSurfaceView);
+		startActivity(new Intent(this, ApplicationPreferences.class));
 	}
 
 	@Override
